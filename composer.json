@@ -1,0 +1,34 @@
+{
+    "name": "limingxinleo/mta",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "component"
+    ],
+    "description": "MTA",
+    "authors": [
+        {
+            "name": "李铭昕",
+            "email": "limingxin@swoft.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Xin\\Mta\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SwoftTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "swoft/swoole-ide-helper": "dev-master",
+        "phpunit/phpunit": "^5.7",
+        "phpstan/phpstan": "^0.10.5"
+    }
+}
