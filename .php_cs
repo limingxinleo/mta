@@ -1,7 +1,7 @@
 <?php
 
 $header = <<<'EOF'
-This file is part of 李铭昕.
+This file is part of limx.
 
 @contact  limingxin@swoft.org
 EOF;

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 /**
- * This file is part of 李铭昕.
+ * This file is part of limx.
  *
  * @contact  limingxin@swoft.org
  */
 
-namespace SwoftTest\Cases;
+namespace Test\Cases;
 
 /**
  * @internal

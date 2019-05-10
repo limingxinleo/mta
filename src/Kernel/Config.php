@@ -7,4 +7,10 @@ declare(strict_types=1);
  * @contact  limingxin@swoft.org
  */
 
-require_once dirname(dirname(__FILE__)) . '/vendor/autoload.php';
+namespace Xin\Mta\Kernel;
+
+use Illuminate\Support\Collection;
+
+class Config extends Collection
+{
+}

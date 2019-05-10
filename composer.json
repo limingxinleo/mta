@@ -20,12 +20,14 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "SwoftTest\\": "tests"
+            "Test\\": "tests"
         }
     },
     "require": {
         "php": ">=7.1",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "pimple/pimple": "^3.2",
+        "illuminate/support": "^5.8"
     },
     "require-dev": {
         "swoft/swoole-ide-helper": "dev-master",
