@@ -76,7 +76,7 @@ abstract class AbstractClient
     {
         $response = $this->client->request($method, $url, $options);
 
-        return json_decode($response->getBody()->getContents());
+        return json_decode($response->getBody()->getContents(), true);
     }
 
     protected function sign(array $params, $secretKey)

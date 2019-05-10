@@ -9,6 +9,8 @@ declare(strict_types=1);
 
 namespace Test\Cases;
 
+use GuzzleHttp\HandlerStack;
+use Test\Testing\MockHandler;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -16,4 +18,14 @@ use PHPUnit\Framework\TestCase;
  */
 abstract class AbstractTestCase extends TestCase
 {
+    protected function getConfig()
+    {
+        return [
+            'app_id' => 'xxx',
+            'secret_key' => 'xxx',
+            'http' => [
+                'handler' => HandlerStack::create(new MockHandler()),
+            ],
+        ];
+    }
 }
