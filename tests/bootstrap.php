@@ -6,5 +6,4 @@ declare(strict_types=1);
  *
  * @contact  limingxin@swoft.org
  */
-
 require_once dirname(dirname(__FILE__)) . '/vendor/autoload.php';

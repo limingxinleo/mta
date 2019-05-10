@@ -12,6 +12,9 @@ namespace Xin\Mta\Kernel;
 use Pimple\Container;
 use Xin\Mta\Kernel\Providers\ConfigServiceProvider;
 
+/**
+ * @property Config $config
+ */
 class ServiceContainer extends Container
 {
     /**
@@ -45,6 +48,29 @@ class ServiceContainer extends Container
         $this->userConfig = $config;
     }
 
+    /**
+     * Magic get access.
+     *
+     * @param string $id
+     *
+     * @return mixed
+     */
+    public function __get($id)
+    {
+        return $this->offsetGet($id);
+    }
+
+    /**
+     * Magic set access.
+     *
+     * @param string $id
+     * @param mixed $value
+     */
+    public function __set($id, $value)
+    {
+        $this->offsetSet($id, $value);
+    }
+
     public function getProviders()
     {
         return array_merge([
@@ -61,10 +87,19 @@ class ServiceContainer extends Container
             // http://docs.guzzlephp.org/en/stable/request-options.html
             'http' => [
                 'timeout' => 30.0,
-                'base_uri' => 'https://api.weixin.qq.com/',
             ],
         ];
 
         return array_replace_recursive($base, $this->defaultConfig, $this->userConfig);
+    }
+
+    /**
+     * @param array $providers
+     */
+    public function registerProviders(array $providers)
+    {
+        foreach ($providers as $provider) {
+            parent::register(new $provider());
+        }
     }
 }
