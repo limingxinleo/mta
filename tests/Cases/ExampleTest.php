@@ -1,14 +1,18 @@
 <?php
+
+declare(strict_types=1);
 /**
- * This file is part of Swoft.
+ * This file is part of 李铭昕.
  *
- * @link     https://swoft.org
- * @document https://doc.swoft.org
  * @contact  limingxin@swoft.org
- * @license  https://github.com/swoft-cloud/swoft/blob/master/LICENSE
  */
+
 namespace SwoftTest\Cases;
 
+/**
+ * @internal
+ * @coversNothing
+ */
 class ExampleTest extends AbstractTestCase
 {
     public function testExample()
