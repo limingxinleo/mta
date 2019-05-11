@@ -12,7 +12,12 @@ namespace Xin\Mta\H5;
 use Xin\Mta\Kernel\ServiceContainer;
 
 /**
+ * @property AdTag\Client $adtag
+ * @property Custom\Client $custom
+ * @property Device\Client $device
  * @property Page\Client $page
+ * @property Source\Client $source
+ * @property Trend\Client $trend
  */
 class Application extends ServiceContainer
 {
@@ -27,6 +32,12 @@ class Application extends ServiceContainer
      * @var array
      */
     protected $providers = [
+        AdTag\ServiceProvider::class,
+        Custom\ServiceProvider::class,
+        Device\ServiceProvider::class,
         Page\ServiceProvider::class,
+        Source\ServiceProvider::class,
+        Trend\ServiceProvider::class,
+        User\ServiceProvider::class,
     ];
 }
