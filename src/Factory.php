@@ -13,7 +13,9 @@ use Illuminate\Support\Str;
 use Xin\Mta\Kernel\ServiceContainer;
 
 /**
- * @method static \Xin\Mta\H5\Application   h5(array $config)
+ * @method static \Xin\Mta\App\Application          app(array $config)
+ * @method static \Xin\Mta\H5\Application           h5(array $config)
+ * @method static \Xin\Mta\MiniProgram\Application  miniProgram(array $config)
  */
 class Factory
 {

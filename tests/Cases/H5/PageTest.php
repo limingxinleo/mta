@@ -19,7 +19,7 @@ use Test\Cases\AbstractTestCase;
  */
 class PageTest extends AbstractTestCase
 {
-    public function testExample()
+    public function testH5PageRealtime()
     {
         /** @var Application $app */
         $app = Factory::make('h5', $this->getConfig());
