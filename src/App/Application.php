@@ -12,7 +12,10 @@ namespace Xin\Mta\App;
 use Xin\Mta\Kernel\ServiceContainer;
 
 /**
- * @property AdTag\Client $adtag
+ * @property Basic\Client $basic
+ * @property Crash\Client $crash
+ * @property Terminal\Client $terminal
+ * @property User\Client $user
  */
 class Application extends ServiceContainer
 {
@@ -27,5 +30,9 @@ class Application extends ServiceContainer
      * @var array
      */
     protected $providers = [
+        Basic\ServiceProvider::class,
+        Crash\ServiceProvider::class,
+        Terminal\ServiceProvider::class,
+        User\ServiceProvider::class,
     ];
 }
