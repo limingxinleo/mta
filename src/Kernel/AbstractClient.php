@@ -13,7 +13,15 @@ use GuzzleHttp\Client;
 
 abstract class AbstractClient
 {
+    /**
+     * @var Client
+     */
     protected $client;
+
+    /**
+     * @var ServiceContainer
+     */
+    protected $app;
 
     public function __construct(ServiceContainer $app)
     {
