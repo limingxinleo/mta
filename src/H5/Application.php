@@ -12,12 +12,13 @@ namespace Xin\Mta\H5;
 use Xin\Mta\Kernel\ServiceContainer;
 
 /**
- * @property AdTag\Client $adtag
- * @property Custom\Client $custom
- * @property Device\Client $device
- * @property Page\Client $page
- * @property Source\Client $source
- * @property Trend\Client $trend
+ * @property AdTag\Client   $adtag
+ * @property Custom\Client  $custom
+ * @property Device\Client  $device
+ * @property Page\Client    $page
+ * @property Source\Client  $source
+ * @property Trend\Client   $trend
+ * @property User\Client    $user
  */
 class Application extends ServiceContainer
 {
