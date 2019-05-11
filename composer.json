@@ -6,7 +6,7 @@
         "php",
         "component"
     ],
-    "description": "MTA",
+    "description": "PHP SDK for Mobile Tencent Analytics (MTA)",
     "authors": [
         {
             "name": "李铭昕",
