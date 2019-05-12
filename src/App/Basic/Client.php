@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Xin\Mta\App\Basic;
 
-use Xin\Mta\Kernel\AbstractClient;
+use Xin\Mta\App\AbstractClient;
 
 class Client extends AbstractClient
 {
@@ -38,18 +38,13 @@ class Client extends AbstractClient
      *
      * @see https://mta.qq.com/docs/open_api.html#%E5%BA%94%E7%94%A8%E5%9F%BA%E6%9C%AC%E6%8C%87%E6%A0%87
      *
-     * @param string $startDate 开始时间(Y-m-d)
-     * @param string $endDate 结束时间(Y-m-d)
-     *
      * @return array
      */
-    public function realtime($startDate, $endDate)
+    public function realtime()
     {
         $params = [
-            'start_date' => $startDate,
-            'end_date' => $endDate,
-            'idx' => '10101,10102,10103,10104,10105,10106',
+            'idx' => '10101,10102,10103,10104,10105',
         ];
-        return $this->httpGet('ctr_user_basic/get_offline_data', $params);
+        return $this->httpGet('ctr_user_basic/get_realtime_data', $params);
     }
 }

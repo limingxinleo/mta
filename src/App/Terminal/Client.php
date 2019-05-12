@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Xin\Mta\App\Terminal;
 
-use Xin\Mta\Kernel\AbstractClient;
+use Xin\Mta\App\AbstractClient;
 
 class Client extends AbstractClient
 {
