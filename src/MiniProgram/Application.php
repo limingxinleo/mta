@@ -19,7 +19,7 @@ class Application extends ServiceContainer
     protected $defaultConfig = [
         // http://docs.guzzlephp.org/en/stable/request-options.html
         'http' => [
-            'base_uri' => 'https://openapi.mta.qq.com/wx/v1',
+            'base_uri' => 'https://openapi.mta.qq.com/wx/v1/',
         ],
     ];
 

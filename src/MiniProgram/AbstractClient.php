@@ -18,4 +18,13 @@ abstract class AbstractClient extends KernelAbstractClient
         $query['timestamp'] = time();
         return parent::httpGet($url, $query);
     }
+
+    protected function sign(array $params, $secretKey)
+    {
+        ksort($params);
+        foreach ($params as $key => $value) {
+            $secretKey .= '&' . $key . '=' . $value;
+        }
+        return md5($secretKey);
+    }
 }
