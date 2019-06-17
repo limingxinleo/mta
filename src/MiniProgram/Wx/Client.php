@@ -60,7 +60,7 @@ class Client extends AbstractClient
             'start_date' => $startDate,
             'end_date' => $endDate,
         ];
-        return $this->httpGet('analytics/history', $params);
+        return $this->httpGet('analytics/user_compare', $params);
     }
 
     /**
