@@ -4,13 +4,13 @@ declare(strict_types=1);
 /**
  * This file is part of limx.
  *
- * @contact  limingxin@swoft.org
+ * @contact  l@hyperf.io
  */
 namespace Test\Cases\H5;
 
+use Test\Cases\AbstractTestCase;
 use Xin\Mta\Factory;
 use Xin\Mta\H5\Application;
-use Test\Cases\AbstractTestCase;
 
 /**
  * @internal

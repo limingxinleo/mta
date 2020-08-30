@@ -4,13 +4,13 @@ declare(strict_types=1);
 /**
  * This file is part of limx.
  *
- * @contact  limingxin@swoft.org
+ * @contact  l@hyperf.io
  */
 namespace Test\Cases;
 
 use GuzzleHttp\HandlerStack;
-use Test\Testing\MockHandler;
 use PHPUnit\Framework\TestCase;
+use Test\Testing\MockHandler;
 
 /**
  * Class AbstractTestCase.
