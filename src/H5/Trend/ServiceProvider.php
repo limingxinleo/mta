@@ -6,7 +6,6 @@ declare(strict_types=1);
  *
  * @contact  limingxin@swoft.org
  */
-
 namespace Xin\Mta\H5\Trend;
 
 use Pimple\Container;

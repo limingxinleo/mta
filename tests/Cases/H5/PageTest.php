@@ -6,7 +6,6 @@ declare(strict_types=1);
  *
  * @contact  limingxin@swoft.org
  */
-
 namespace Test\Cases\H5;
 
 use Xin\Mta\Factory;

@@ -6,7 +6,6 @@ declare(strict_types=1);
  *
  * @contact  limingxin@swoft.org
  */
-
 namespace Xin\Mta;
 
 use Hyperf\Utils\Str;
@@ -34,7 +33,6 @@ class Factory
 
     /**
      * @param string $name
-     * @param array $config
      *
      * @return ServiceContainer
      */

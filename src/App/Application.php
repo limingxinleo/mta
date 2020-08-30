@@ -6,7 +6,6 @@ declare(strict_types=1);
  *
  * @contact  limingxin@swoft.org
  */
-
 namespace Xin\Mta\App;
 
 use Xin\Mta\Kernel\ServiceContainer;

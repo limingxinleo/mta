@@ -6,7 +6,6 @@ declare(strict_types=1);
  *
  * @contact  limingxin@swoft.org
  */
-
 namespace Xin\Mta\MiniProgram\Wx;
 
 use Xin\Mta\MiniProgram\AbstractClient;

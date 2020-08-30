@@ -6,7 +6,6 @@ declare(strict_types=1);
  *
  * @contact  limingxin@swoft.org
  */
-
 namespace Xin\Mta\Kernel;
 
 use Pimple\Container;
@@ -35,8 +34,6 @@ class ServiceContainer extends Container
     /**
      * Constructor.
      *
-     * @param array $config
-     * @param array $prepends
      * @param null|string $id
      */
     public function __construct(array $config = [], array $prepends = [])
@@ -93,9 +90,6 @@ class ServiceContainer extends Container
         return array_replace_recursive($base, $this->defaultConfig, $this->userConfig);
     }
 
-    /**
-     * @param array $providers
-     */
     public function registerProviders(array $providers)
     {
         foreach ($providers as $provider) {

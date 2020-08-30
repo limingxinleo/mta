@@ -6,7 +6,6 @@ declare(strict_types=1);
  *
  * @contact  limingxin@swoft.org
  */
-
 namespace Xin\Mta\Kernel;
 
 use GuzzleHttp\Client;
@@ -32,9 +31,6 @@ abstract class AbstractClient
     /**
      * GET request.
      *
-     * @param string $url
-     * @param array $query
-     *
      * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     protected function httpGet(string $url, array $query = [])
@@ -48,9 +44,6 @@ abstract class AbstractClient
     /**
      * POST request.
      *
-     * @param string $url
-     * @param array $data
-     *
      * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
     protected function httpPost(string $url, array $data = [])
@@ -61,9 +54,7 @@ abstract class AbstractClient
     /**
      * JSON request.
      *
-     * @param string $url
      * @param array|string $data
-     * @param array $query
      *
      * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      */
@@ -73,9 +64,6 @@ abstract class AbstractClient
     }
 
     /**
-     * @param string $url
-     * @param string $method
-     * @param array $options
      * @param bool $returnRaw
      *
      * @return array
