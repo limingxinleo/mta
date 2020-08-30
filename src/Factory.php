@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Xin\Mta;
 
-use Illuminate\Support\Str;
+use Hyperf\Utils\Str;
 use Xin\Mta\Kernel\ServiceContainer;
 
 /**
