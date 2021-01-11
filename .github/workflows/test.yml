@@ -57,6 +57,9 @@ jobs:
           php --ri swow
       - name: Setup Packages
         run: composer update -o
+      - name: Required Swow Engine
+        if: ${{ matrix.engine == 'swow' }}
+        run: composer require hyperf/engine-swow
       - name: Run Test Cases
         run: |
           composer analyse src
