@@ -1,6 +1,6 @@
 # PHP SDK for Mobile Tencent Analytics (MTA)
 
-[![Build Status](https://travis-ci.org/limingxinleo/mta.svg?branch=master)](https://travis-ci.org/limingxinleo/mta)
+![PHPUnit](https://github.com/limingxinleo/mta/workflows/PHPUnit/badge.svg)
 
 ## 使用
 
