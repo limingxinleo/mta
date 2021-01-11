@@ -35,6 +35,12 @@
         "phpstan/phpstan": "^0.12",
         "friendsofphp/php-cs-fixer": "^2.14"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
     "scripts": {
         "test": "phpunit -c phpunit.xml --colors=always",
         "cs-fix": "php-cs-fixer fix $1",
