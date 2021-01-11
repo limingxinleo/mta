@@ -24,7 +24,7 @@
         }
     },
     "require": {
-        "php": ">=7.1",
+        "php": ">=7.2",
         "guzzlehttp/guzzle": "^6.3|^7.0",
         "pimple/pimple": "^3.2",
         "hyperf/utils": "2.1.*"
