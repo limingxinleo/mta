@@ -25,13 +25,13 @@
     },
     "require": {
         "php": ">=7.1",
-        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/guzzle": "^6.3|^7.0",
         "pimple/pimple": "^3.2",
-        "hyperf/utils": "2.0.*"
+        "hyperf/utils": "2.1.*"
     },
     "require-dev": {
         "swoft/swoole-ide-helper": "dev-master",
-        "phpunit/phpunit": "^5.7",
+        "phpunit/phpunit": ">=5.7",
         "phpstan/phpstan": "^0.10.5",
         "friendsofphp/php-cs-fixer": "^2.14"
     },
