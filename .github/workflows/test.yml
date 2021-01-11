@@ -62,5 +62,5 @@ jobs:
         run: composer require hyperf/engine-swow
       - name: Run Test Cases
         run: |
-          composer analyse src
+          composer analyse
           composer test
