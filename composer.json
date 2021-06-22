@@ -27,7 +27,7 @@
         "php": ">=7.3",
         "guzzlehttp/guzzle": "^6.3|^7.0",
         "pimple/pimple": "^3.2",
-        "hyperf/utils": "2.1.*"
+        "hyperf/utils": "^2.1"
     },
     "require-dev": {
         "swoft/swoole-ide-helper": "dev-master",
